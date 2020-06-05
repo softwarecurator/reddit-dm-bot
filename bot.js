@@ -6,7 +6,7 @@ const data = require('./data.json');
 
   await reddit.login(data.username, data.password);
 
-  await reddit.getResults("Honda",20);
+  await reddit.getResults(data.subreddit ,data.post);
 
   await reddit.findMatches();
 

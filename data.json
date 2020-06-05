@@ -3,5 +3,7 @@
     "password": "",
     "keyword": "",
     "subject": "",
-    "message": ""
+    "message": "",
+    "subreddit": "",
+    "posts": 10
 }
