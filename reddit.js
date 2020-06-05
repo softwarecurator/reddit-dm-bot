@@ -128,6 +128,10 @@ const self = {
 
   sendMessage: async (post) => {
     // go to users profile
+    if (post.authorName === 'AutoModerator') {
+      console.log('Dont send to mods buddy!'.cyan)
+      return;
+    }
     console.log(`sending message to ${post.authorName}`.cyan)
     await self.page.goto(SEND_MESSAGE_URL(post.authorName), { waitUntil: "networkidle0" });
 
